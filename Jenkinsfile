@@ -54,6 +54,6 @@ node {
        sh 'curl -u admin:admin -T target/**.war "http://127.0.0.1:7080/manager/text/deploy?path=/web-demo&update=true"'
    }
    stage("Smoke Test"){
-       sh "curl --retry-delay 10 --retry 5 http://http://127.0.0.1:7080/web-demo/users/1"
+       sh "curl --retry-delay 10 --retry 5 http://127.0.0.1:7080/web-demo/users/1"
    } 
 }
