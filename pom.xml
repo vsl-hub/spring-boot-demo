@@ -2,27 +2,24 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   
-  <groupId>com.wedevol</groupId>
-  <artifactId>emptyspringrestexample</artifactId>
+  <groupId>com.training</groupId>
+  <artifactId>webappdemo</artifactId>
   <packaging>war</packaging>
   <version>2.0.3</version>
   <name>Empty Spring Rest Example Project</name>
-  <description>This is an empty spring boot rest project that uses Tomcat. It was created just to explain a Jenkins deployment.</description>
+  <description>Spring boot demo</description>
   
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<tomcat.version>8.5.56</tomcat.version> <!-- activates spring boot internal servlet configuration when used as auto executable -->
+		<tomcat.version>8.5.57</tomcat.version> <!-- activates spring boot internal servlet configuration when used as auto executable -->
 	</properties>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.1.RELEASE</version>
-		<!-- https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Release-Notes -->
-		<!-- https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.1.0-M1-Release-Notes -->
-		<!-- https://github.com/spring-projects/spring-booT/wiki/Spring-Boot-2.2.0-M1-Release-Notes -->
+		<version>2.3.2.RELEASE</version>
 	</parent>
 
 	<dependencies>
@@ -39,7 +36,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>emptyspringrestexample</finalName>
+		<finalName>webappdemo</finalName>
 		<plugins>
 			<!-- Spring boot maven plugin -->
 			<plugin>

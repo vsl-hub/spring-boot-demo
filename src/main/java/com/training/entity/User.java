@@ -1,12 +1,6 @@
-package com.wedevol.emptyspringrest.entity;
+package com.training.entity;
 
 import java.util.List;
-
-/**
- * Represents a user entity
- *
- * @author Charz++
- */
 
 public class User {
 
