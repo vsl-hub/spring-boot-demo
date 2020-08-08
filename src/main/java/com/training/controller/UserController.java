@@ -23,6 +23,7 @@ public class UserController {
 
     private static final User USER_1 = new User(1L, "Peter", Arrays.asList("peter"), 26, "peter@xyz.com");
     private static final User USER_2 = new User(2L, "John", Arrays.asList("jonny"), 26, "john@xyz.com");
+    private static final User USER_3 = new User(3L, "Rohit", Arrays.asList("rohit"), 30, "rohit@xyz.com");
 
     @RequestMapping(value = "/{userId}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
