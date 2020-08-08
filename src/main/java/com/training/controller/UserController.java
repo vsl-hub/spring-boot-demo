@@ -30,9 +30,11 @@ public class UserController {
     public User findById(@PathVariable Long userId) throws Exception {
         LOG.info("Find user by id: {}", userId);
         if (userId.equals(1L)) {
-            return USER_2;
-        } else if (userId.equals(2L)) {
             return USER_1;
+        } else if (userId.equals(2L)) {
+            return USER_2;
+        } else if (userId.equals(3L)) {
+            return USER_3;
         } else {
             throw new Exception("I just created 1 user to test!");
         }
